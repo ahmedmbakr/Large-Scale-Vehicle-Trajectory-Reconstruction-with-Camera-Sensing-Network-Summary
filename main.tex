@@ -1,0 +1,180 @@
+%  Doc on OneDrive: To be added by AA
+%  Shared forlder with resources: to be created by AA
+
+\documentclass[conference]{IEEEtran}
+%\documentclass {article}
+
+\usepackage[table]{xcolor} % to color inside equation
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{tabularx,colortbl}
+% \usepackage{algorithmic}
+\usepackage[ruled]{algorithm2e}
+
+%%
+\usepackage{amsmath,varwidth,array,ragged2e}
+\usepackage[colorlinks=true]{hyperref} % to use \autoref instead of \ref
+\usepackage{cleveref}
+\renewcommand{\sectionautorefname}{Section}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathrsfs} % for \mathscr
+% \usepackage{algorithmic}
+% \usepackage{graphicx}
+\usepackage{float}
+% \usepackage{epsfig}
+% \usepackage{epstopdf}
+\usepackage{enumitem}
+\usepackage{soul}
+
+\usepackage{lipsum}
+
+% \usepackage{subfig}
+\usepackage{mathtools} % matrix alignment
+
+\usepackage{color}
+\usepackage[dvips]{graphicx}
+
+% Acronym package (Choose one of the following options)
+% \usepackage{acronym} % if you want to show the list of abbreviations
+\usepackage[nolist]{acronym} % if you do not want to show the list of abbreviations
+% How to use:
+% \ac{id} -> 
+
+%\usepackage{qtree}
+\usepackage{tikz}
+%%\usetikzlibrary{trees}
+\usepackage[english]{babel}
+\usepackage{authblk}
+
+% \definecolor{seagreen}{rgb}{0.18, 0.55, 0.34} % for comments in algorithms
+% \SetAlFnt{\small\color{black}\tt}
+% \LinesNumbered
+% \renewcommand{\DataSty}[1]{{\color{yellow}\texttt{#1}}}
+% \renewcommand{\KwSty}[1]{{\color{blue}\texttt{#1}}}
+% \renewcommand{\ProgSty}[1]{{\color{black}\texttt{#1}}}
+% \renewcommand{\FuncSty}[1]{{\color{black}\texttt{#1}}}
+% \renewcommand{\CommentSty}[1]{{\color{seagreen}\texttt{#1}}}
+% \renewcommand{\ArgSty}[1]{{\color{black}\texttt{#1}}}
+% \renewcommand{\FuncArgSty}[1]{{\color{black}\texttt{#1}}}
+% \renewcommand{\ProcArgSty}[1]{{\color{black}\texttt{#1}}}
+% \renewcommand{\ProcNameSty}[1]{{\color{black}\texttt{#1}}}
+% \renewcommand{\NlSty}[1]{{\color{black}\texttt{#1}}}
+% \newcommand{\red}[1]{{\textcolor{red} {#1}}}
+% \newcommand{\blue}[1]{{\textcolor{blue} {#1}}}
+% \definecolor{mygreen}{rgb}{0, 0.5, 0}
+% \newcommand{\green}[1]{{\textcolor{mygreen} {#1}}}
+
+% \makeatletter
+% \newcommand\notsotiny{\@setfontsize\notsotiny\@vipt\@viipt}
+% \makeatother
+
+% \makeatletter
+% \newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+% \newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+% \newcommand{\mathbold}[1]{\text{\textbf{#1}}}
+% \newcommand{\mathbolditalic}[1]{\text{\textit{\textbf{#1}}}}
+% \newcommand{\etal}{\textit{et al. }}
+% \makeatother
+
+% \newcommand{\figref}[1]{Figure~\ref{#1}}
+% \newcommand{\algoref}[1]{Algorithm~\ref{#1}}
+% \newcommand{\tableref}[1]{Table~\ref{#1}}
+% \newcommand{\listref}[1]{Listing~\ref{#1}}
+% \newcommand{\secref}[1]{Section~\ref{#1}}
+
+
+% %\usepackage{caption,setspace} % For caption Problem
+% %\captionsetup{font={small,stretch=0.80}}
+
+% \usepackage{textcomp}
+% \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+% \DeclareRobustCommand*{\IEEEauthorrefmark}[1]{%
+%   \raisebox{0pt}[0pt][0pt]{\textsuperscript{\footnotesize #1}}%
+% }
+
+% \definecolor{lightgray}{gray}{0.9} % fot tables
+
+% green highlight
+\definecolor{g}{rgb}{0.56, 0.93, 0.56}
+\DeclareRobustCommand{\hlg}[1]{{\sethlcolor{g}\hl{#1}}}
+% blue highlight
+\definecolor{bb}{rgb}{0.56, 0.86, 0.93}
+\DeclareRobustCommand{\hlb}[1]{{\sethlcolor{bb}\hl{#1}}}
+
+% % restore footnote line as it is removed in the document class file
+% \makeatletter
+% \def\footnoterule{\kern-3\p@
+%   \hrule \@width 2in \kern 2.6\p@} % the \hrule is .4pt high
+% \makeatother
+
+% \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+
+% % Bold \ell
+% \newcommand*\Bell{\ensuremath{\boldsymbol\ell}}
+
+% Workaround for the URL alignment in the bibliography. Note that this solution does not work with the Latex compiler, so consider changing the compiler if you are using overleaf to see the effect.
+\usepackage{url}
+\usepackage{breakurl}
+\def\UrlBreaks{\do\/\do-}
+
+\title{Large-Scale Vehicle Trajectory Reconstruction with Camera Sensing Network Summary}
+\vspace{-10mm}
+
+\author[1]{Ahmed Bakr}
+
+\affil[1]{Department of Computer Science, University of Alabama, AL, USA}
+%\vspace{-5mm}
+
+
+
+\begin{acronym}
+    \acro{lpr}[LPR]{License Plate Recognition}
+    \acro{re-id}[Re-ID]{Re-Identification}
+    \acro{mds}[MDS]{Multi-Dimensional Similarity}
+    \acro{gcn}[GCN]{Graph Convolution Network}
+    \acro{rng}[RNG]{Road Network Graph}
+    \acro{dl}[DL]{Deep Learning}
+    \acro{crnn}[CRNN]{Convolutional Recurrent Neural Network}
+    \acro{hris}[HRIS]{History based route inference system}
+    % \acro{}[]{}
+\end{acronym}
+
+\begin{document}
+
+\maketitle
+
+%% Comment to hide page number
+% \thispagestyle{plain}
+% \pagestyle{plain}    
+
+% \chaptermark{Abbreviation}
+% \chapter*{List of Abbreviations}
+\input{0. Abstract.tex}
+
+\acresetall % reset acronyms
+
+
+\input{1. Introduction.tex}
+\input{2. Related Works.tex}
+\input{5. The Proposed Scheme.tex} 
+\input{6 7 . Discussion and Evaluations}
+\input{8. Conclusions.tex}
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs_LSVTR}
+
+% \input{9. Appendices.tex}
+\end{document} 
